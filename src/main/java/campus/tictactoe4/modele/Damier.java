@@ -1,4 +1,4 @@
-package campus.tictactoe4;
+package campus.tictactoe4.modele;
 
 import java.util.List;
 
@@ -38,7 +38,7 @@ public class Damier {
      * @param coordonnees coordonnes de la case
      */
     public void setCasePlateau(Joueur joueur, List<Integer> coordonnees) {
-        plateauJeu[coordonnees.get(0)][coordonnees.get(1)].setRepresentation(joueur.getRepresentationJoueur());
+        plateauJeu[coordonnees.get(0)][coordonnees.get(1)].setJoueur(joueur);
     }
 
     public CaseDamier[][] getPlateauJeu() {

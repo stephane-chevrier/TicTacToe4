@@ -1,17 +1,16 @@
-package campus.tictactoe4;
+package campus.tictactoe4.modele;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class JoueurHumain extends Joueur {
 
-
     /**
      * constructeur
      */
     public JoueurHumain(String nomJoueur, int indexJoueur) {
-        super.setNomJoueur(nomJoueur);
-        super.setRepresentationJoueur(indexJoueur);
+        this.setNomJoueur(nomJoueur);
+        this.setIndexJoueur(indexJoueur);
     }
 
     /**
