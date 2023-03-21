@@ -1,8 +1,5 @@
 package campus.tictactoe4.modele;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
-
-import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,16 +7,21 @@ import java.util.Random;
 
 public class JoueurAleatoire extends Joueur {
 
+
+    /**
+     * initialisation des constantes
+     */
+    protected static final String NOM_JOUEUR_ALEATOIRE = "random";
     /**
      * Creation objet SecureRandom
      */
-    private final Random aleatoire = SecureRandom.getInstanceStrong();
+    private final Random aleatoire = new SecureRandom();
 
     /**
      * constructeur
      */
-    public JoueurAleatoire(int indexJoueur) throws NoSuchAlgorithmException {
-        this.setNomJoueur(Joueur.NOM_JOUEUR_ALEATOIRE+indexJoueur);
+    public JoueurAleatoire(int indexJoueur)  {
+        this.setNomJoueur(NOM_JOUEUR_ALEATOIRE+indexJoueur);
         this.setIndexJoueur(indexJoueur);
     }
 

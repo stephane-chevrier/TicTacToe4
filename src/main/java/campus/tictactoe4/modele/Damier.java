@@ -32,13 +32,13 @@ public class Damier {
         return caseDamiers;
     }
 
-        /**
-     * methode d'entree du coup joue dans le damier
+    /**
+     * methode d'initialisation d'une case avec un pion du joueur
      * @param joueur joueur
      * @param coordonnees coordonnes de la case
      */
-    public void setCasePlateau(Joueur joueur, List<Integer> coordonnees) {
-        plateauJeu[coordonnees.get(0)][coordonnees.get(1)].setJoueur(joueur);
+    public void initCasePlateau(Joueur joueur, List<Integer> coordonnees) {
+        plateauJeu[coordonnees.get(0)][coordonnees.get(1)].setPion(new Pion(joueur.getIndexJoueur()));
     }
 
     public CaseDamier[][] getPlateauJeu() {

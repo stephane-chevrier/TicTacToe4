@@ -1,27 +1,24 @@
 package campus.tictactoe4.modele;
 
-import java.util.List;
-
 public class CaseDamier {
-
-    /**
-     * Initialisation des constantes
-     */
-    protected static final Joueur CASE_VIDE_VALUE = new JoueurVide();
 
     /**
      * creation variables d'instance
      */
-    private Joueur proprietaire;
+    private Pion pion;
 
     /**
      * constructeur
      */
     protected CaseDamier() {
-        this.proprietaire = CASE_VIDE_VALUE;
+        this.pion = new Pion(0);
     }
 
-    protected void setJoueur(Joueur joueur) {
-        this.proprietaire=joueur;
+    public Pion getPion() {
+        return pion;
+    }
+
+    public void setPion(Pion pion) {
+        this.pion = pion;
     }
 }

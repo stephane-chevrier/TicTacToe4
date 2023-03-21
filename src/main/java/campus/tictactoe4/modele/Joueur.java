@@ -5,11 +5,6 @@ import java.util.List;
 public abstract class Joueur {
 
     /**
-     * initialisation des constantes
-     */
-    protected static final String NOM_JOUEUR_ALEATOIRE = "random";
-
-    /**
      * Initialisation variables d'instance
      */
     private String nomJoueur;
@@ -47,7 +42,5 @@ public abstract class Joueur {
      * @param taille taille du plateau
      * @return ArrayList<Integer> : {Y,X}
      */
-    public List<Integer> setCoupJoueur(int taille) {
-        return null;
-    }
+    public abstract List<Integer> setCoupJoueur(int taille);
 }

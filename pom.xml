@@ -69,6 +69,18 @@
             <version>3.0.4</version>
         </dependency>
 
+
+        <!-- Dependance a la base memoire de type H2 -->
+        <!-- Licence open source jdbc api -->
+        <!-- Faille sans importance, H2 utilise uniquement pendant des phases de developpement -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.1.214</version>
+            <scope>runtime</scope>
+        </dependency>
+
+
         <!-- Dependance a la base memoire de type mysql -->
         <!-- Licence publique Oracle -->
         <dependency>
